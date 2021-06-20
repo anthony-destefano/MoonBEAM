@@ -14,7 +14,8 @@ directory_list_filename = 'list_of_trajectory_directories.txt'
 
 # https://stackoverflow.com/questions/35617073/python-numpy-how-to-best-deal-with-possible-0d-arrays
 directories, separate_segments = np.atleast_1d(np.loadtxt(directory_list_filename, unpack=True, dtype=str))
-
+separate_segments = separate_segments.astype(int)
+filename_out = ''
 
 for (cur_directory, is_separate) in zip(directories, separate_segments):
 	#plt.figure()
@@ -32,7 +33,7 @@ for (cur_directory, is_separate) in zip(directories, separate_segments):
 	mass_kg_s_set        = np.array([])
 
 	for file in glob.glob(cur_directory + '\\*.csv'):
-		print(file, is_separate)
+		print('reading... ', file, is_separate)
 
 		if is_separate == 1:
 			ephemeris_time_s_set = np.array([])
@@ -62,10 +63,23 @@ for (cur_directory, is_separate) in zip(directories, separate_segments):
 		Vz_km_s_set          = np.append(Vz_km_s_set, np.char.replace(Vz_km_s, '"', '').astype(float))
 		mass_kg_set          = np.append(mass_kg_s_set, np.char.replace(mass_kg, '"', '').astype(float))
 
-		altitude_km = np.sqrt(Rx_km_set**2 + Ry_km_set**2 + Rz_km_set**2)
+		#print(is_separate, is_separate == 1)
+
+		if is_separate == 1:
+			filename_out = file[len(cur_directory)+1:-4] + '_IRENE_GEI.txt'
+			print('saving... ', filename_out)
+			# https://stackoverflow.com/questions/15192847/saving-arrays-as-columns-with-np-savetxt
+			np.savetxt(filename_out, np.c_[julian_date_day_set-2400000.5, Rx_km_set, Ry_km_set, Rz_km_set])
+
+	if is_separate == 0:
+		filename_out = file[len(cur_directory)+1:-4] + '_IRENE_GEI.txt'
+		print('saving... ', filename_out)
+		# https://stackoverflow.com/questions/15192847/saving-arrays-as-columns-with-np-savetxt
+		np.savetxt(filename_out, np.c_[julian_date_day_set-2400000.5, Rx_km_set, Ry_km_set, Rz_km_set])
+		#altitude_km = np.sqrt(Rx_km_set**2 + Ry_km_set**2 + Rz_km_set**2)
 
 		#plt.plot(ephemeris_time_s, altitude_km, label=file)
-		plt.plot(Rx_km_set/RE, Ry_km_set/RE, label=file)
+		#plt.plot(Rx_km_set/RE, Ry_km_set/RE, label=file)
 
-	plt.legend()
-plt.show()
+# 	plt.legend()
+# plt.show()
