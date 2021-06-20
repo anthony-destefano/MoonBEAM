@@ -1,0 +1,6 @@
+500km 0
+1000km 0
+2000km 0
+3000km 0
+4000km 0
+MoonbeamRadAnalysis 1
