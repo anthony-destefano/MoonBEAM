@@ -1,0 +1,22 @@
+# Ae9Ap9 Model output file: MoonBEAM_trajectory_trade/31_nominals-SEGMENT_3.AE9.output_mc_fluenceIntv_conf_level_50.txt
+# Ae9Ap9 Software Version:  1.50.001
+#
+# Model type:               AE9
+# Particle species:         e-
+# Flux type:                1PtDiff
+# Flux direction:           Omnidirectional
+# Energy levels (MeV):       0.04 0.07 0.1 0.25 0.5 0.75 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8.5 10
+#
+# Accumulation mode:        Interval, length = 280800 seconds (3.25 days)
+#
+# Aggregation Confidence Level:   median (50)
+# Scenarios in Aggregation (100): 001-100
+#
+# Time format:              Modified Julian Date
+# Coordinate system:        GEI (Geocentric Equatorial Inertial) Cartesian in km
+# Data Delimiter:           space
+#
+# datetime(mjd),posx(km),posy(km),posz(km),fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence(#/cm^2/MeV)
+51547.75000000 0.000000 0.000000 0.000000 6.50409689e+012 4.44242332e+012 1.48059179e+012 4.06579892e+011 9.77825764e+010 4.05504359e+010 1.80403246e+010 6.14288135e+009 2.12610861e+009 5.09567083e+008 1.72619945e+008 6.03015597e+007 2.30187419e+007 9.04081596e+006 3.89396017e+006 1.95079511e+006 1.11223950e+006 7.15207493e+005 4.09649659e+005 2.23502379e+005 1.35551522e+005
+51551.00000000 0.000000 0.000000 0.000000 6.50409689e+012 4.44242332e+012 1.48059179e+012 4.06579892e+011 9.77825764e+010 4.05504359e+010 1.80403246e+010 6.14288135e+009 2.12610861e+009 5.09567083e+008 1.72619945e+008 6.03015597e+007 2.30187419e+007 9.04081596e+006 3.89396017e+006 1.95079511e+006 1.11223950e+006 7.15207493e+005 4.09649659e+005 2.23502379e+005 1.35551522e+005
+51553.60719400 0.000000 0.000000 0.000000 1.35391613e+013 9.58877834e+012 3.54523453e+012 9.42673795e+011 2.42002548e+011 9.05050245e+010 3.91908939e+010 1.40800763e+010 4.49973929e+009 1.39573678e+009 4.64098993e+008 1.74711499e+008 6.61991002e+007 2.64326558e+007 1.12148840e+007 5.48899044e+006 3.25820152e+006 2.11534795e+006 1.21912562e+006 6.08055079e+005 3.77835213e+005

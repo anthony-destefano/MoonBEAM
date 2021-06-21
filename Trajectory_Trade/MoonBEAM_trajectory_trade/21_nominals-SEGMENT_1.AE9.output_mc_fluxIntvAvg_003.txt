@@ -1,0 +1,18 @@
+# Ae9Ap9 Model output file: MoonBEAM_trajectory_trade/21_nominals-SEGMENT_1.AE9.output_mc_fluxIntvAvg_003.txt
+# Ae9Ap9 Software Version:  1.50.001
+#
+# Model type:               AE9
+# Particle species:         e-
+# Flux type:                1PtDiff
+# Flux direction:           Omnidirectional
+# Energy levels (MeV):       0.04 0.07 0.1 0.25 0.5 0.75 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8.5 10
+#
+# Accumulation mode:        Interval, length = 754272 seconds (8.73 days)
+#
+# Time format:              Modified Julian Date
+# Coordinate system:        GEI (Geocentric Equatorial Inertial) Cartesian in km
+# Data Delimiter:           space
+#
+# datetime(mjd),posx(km),posy(km),posz(km),flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux,flux(#/cm^2/s/MeV)
+51553.23000000 0.000000 0.000000 0.000000 2.33406346e+007 1.39013923e+007 3.66717172e+006 6.07276892e+005 1.30250269e+005 3.76749856e+004 1.13652176e+004 3.00643814e+003 8.74297850e+002 3.37002802e+002 1.49415076e+002 6.20636370e+001 2.57430307e+001 1.09629153e+001 5.06849700e+000 2.66590345e+000 1.59633819e+000 1.02240587e+000 5.34128026e-001 2.54311629e-001 1.61296145e-001
+51558.16079100 0.000000 0.000000 0.000000 5.04531121e+007 2.50764951e+007 5.03806306e+006 3.35903756e+005 2.96867468e+004 5.26704606e+003 1.00321223e+003 1.20611162e+002 1.81227917e+001 7.68751863e+000 5.25167440e+000 2.62693280e+000 1.26310710e+000 6.52161483e-001 3.54454591e-001 1.87183347e-001 1.04578374e-001 6.36287981e-002 3.09306213e-002 1.75749669e-002 1.38203793e-002

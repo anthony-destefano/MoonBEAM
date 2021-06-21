@@ -1,0 +1,22 @@
+# Ae9Ap9 Model output file: MoonBEAM_trajectory_trade/31_nominals-SEGMENT_4.AE9.output_mc_fluenceIntv_conf_level_95.txt
+# Ae9Ap9 Software Version:  1.50.001
+#
+# Model type:               AE9
+# Particle species:         e-
+# Flux type:                1PtDiff
+# Flux direction:           Omnidirectional
+# Energy levels (MeV):       0.04 0.07 0.1 0.25 0.5 0.75 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8.5 10
+#
+# Accumulation mode:        Interval, length = 294624 seconds (3.41 days)
+#
+# Aggregation Confidence Level:   95
+# Scenarios in Aggregation (100): 001-100
+#
+# Time format:              Modified Julian Date
+# Coordinate system:        GEI (Geocentric Equatorial Inertial) Cartesian in km
+# Data Delimiter:           space
+#
+# datetime(mjd),posx(km),posy(km),posz(km),fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence(#/cm^2/MeV)
+51547.91000000 0.000000 0.000000 0.000000 5.42468874e+013 3.53604942e+013 1.19099148e+013 2.31337860e+012 5.08230742e+011 1.99107303e+011 9.67844545e+010 3.35819290e+010 1.16430608e+010 3.51764594e+009 1.46568822e+009 6.13977557e+008 2.62042988e+008 1.24871497e+008 5.03584949e+007 2.41488086e+007 1.48433651e+007 1.08115223e+007 7.15931362e+006 4.11001407e+006 2.31878391e+006
+51551.32000000 0.000000 0.000000 0.000000 5.42468874e+013 3.53604942e+013 1.19099148e+013 2.31337860e+012 5.08230742e+011 1.99107303e+011 9.67844545e+010 3.35819290e+010 1.16430608e+010 3.51764594e+009 1.46568822e+009 6.13977557e+008 2.62042988e+008 1.24871497e+008 5.03584949e+007 2.41488086e+007 1.48433651e+007 1.08115223e+007 7.15931362e+006 4.11001407e+006 2.31878391e+006
+51553.60719400 0.000000 0.000000 0.000000 7.10090998e+013 4.97678870e+013 1.66355689e+013 2.79735469e+012 7.88285644e+011 3.02951382e+011 1.43152611e+011 5.82440365e+010 1.90445080e+010 5.63647511e+009 2.21629676e+009 9.44839980e+008 4.52004499e+008 2.34243431e+008 1.06360282e+008 5.08509965e+007 2.66039212e+007 1.72215548e+007 1.00944049e+007 6.14352485e+006 4.03382698e+006

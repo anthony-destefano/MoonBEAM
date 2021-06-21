@@ -1,0 +1,30 @@
+# Ae9Ap9 Model output file: MoonBEAM_trajectory_trade/31_nominals-SEGMENT_2.AE9.output_mc_TotaldoserateIntvAvg_030.txt
+# Ae9Ap9 Software Version:  1.50.001
+#
+# Model type:               AE9
+# Particle species:         e-
+# Flux type:                1PtDiff
+# Flux direction:           Omnidirectional
+# Energy levels (MeV):       0.04 0.07 0.1 0.25 0.5 0.75 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8.5 10
+# Model type:               AP9
+# Particle species:         H+
+# Flux type:                1PtDiff
+# Flux direction:           Omnidirectional
+# Energy levels (MeV):       0.1 0.2 0.4 0.6 0.8 1 2 4 6 8 10 15 20 30 50 60 80 100 150 200 300 400 700 1200 2000
+#
+# Shielding geometry:       Spherical
+# Shielding depths (mm):     0.1 0.5 1 2 2.5 5 
+# Detector type:            Silicon
+# Nuclear atten. mode:      None
+#
+# Accumulation mode:        Interval, length = 260928 seconds (3.02 days)
+#
+# Time format:              Modified Julian Date
+# Coordinate system:        GEI (Geocentric Equatorial Inertial) Cartesian in km
+# Data Delimiter:           space
+#
+# datetime(mjd),posx(km),posy(km),posz(km),doserate,doserate,doserate,doserate,doserate,doserate(rads/s)
+51547.52000000 0.000000 0.000000 0.000000 5.82062865e-003 1.74342044e-003 6.37799210e-004 1.83298573e-004 1.08003012e-004 1.12485950e-005
+51550.54000000 0.000000 0.000000 0.000000 0.00000000e+000 0.00000000e+000 0.00000000e+000 0.00000000e+000 0.00000000e+000 0.00000000e+000
+51553.56000000 0.000000 0.000000 0.000000 8.01840814e-003 1.51917490e-003 4.75638430e-004 1.15203657e-004 6.14037781e-005 3.65156484e-006
+51553.60719400 0.000000 0.000000 0.000000 2.59156954e-001 8.08432956e-002 3.23111638e-002 7.40212807e-003 3.73466569e-003 2.34531122e-004

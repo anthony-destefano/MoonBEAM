@@ -7,7 +7,7 @@ import numpy.ma as ma
 
 import glob
 
-RE = 6371. # km
+RE = 6371.2 # km
 #vreplace = np.vectorize(np.char.replace)
 
 directory_list_filename = 'list_of_trajectory_directories.txt'
@@ -62,7 +62,24 @@ for (cur_directory, is_separate) in zip(directories, separate_segments):
 		Vy_km_s_set          = np.append(Vy_km_s_set, np.char.replace(Vy_km_s, '"', '').astype(float))
 		Vz_km_s_set          = np.append(Vz_km_s_set, np.char.replace(Vz_km_s, '"', '').astype(float))
 		mass_kg_set          = np.append(mass_kg_s_set, np.char.replace(mass_kg, '"', '').astype(float))
+	
+		# IRENE won't take inputs with trajectories larger than 50 Re
+		mask = np.sqrt(Rx_km_set**2 + Ry_km_set**2 + Rz_km_set**2)/RE < 50. 
 
+		ephemeris_time_s_set = ephemeris_time_s_set[mask]
+		julian_date_day_set = julian_date_day_set[mask]
+		sim_time_day_set    = sim_time_day_set[mask]
+		seg_time_day_set    = seg_time_day_set[mask]
+		Vx_km_s_set         = Vx_km_s_set[mask]
+		Vy_km_s_set         = Vy_km_s_set[mask]
+		Vz_km_s_set         = Vz_km_s_set[mask]
+		#mass_kg_set         = mass_kg_set[mask]
+		Rx_km_set           = Rx_km_set[mask]
+		Ry_km_set           = Ry_km_set[mask]
+		Rz_km_set           = Rz_km_set[mask]
+
+		# need the max time step for dose calculations
+		print(np.max(julian_date_day_set[1:]-julian_date_day_set[0:-1]))
 		#print(is_separate, is_separate == 1)
 
 		if is_separate == 1:
@@ -76,10 +93,5 @@ for (cur_directory, is_separate) in zip(directories, separate_segments):
 		print('saving... ', filename_out)
 		# https://stackoverflow.com/questions/15192847/saving-arrays-as-columns-with-np-savetxt
 		np.savetxt(filename_out, np.c_[julian_date_day_set-2400000.5, Rx_km_set, Ry_km_set, Rz_km_set])
-		#altitude_km = np.sqrt(Rx_km_set**2 + Ry_km_set**2 + Rz_km_set**2)
 
-		#plt.plot(ephemeris_time_s, altitude_km, label=file)
-		#plt.plot(Rx_km_set/RE, Ry_km_set/RE, label=file)
 
-# 	plt.legend()
-# plt.show()

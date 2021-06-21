@@ -1,0 +1,22 @@
+# Ae9Ap9 Model output file: MoonBEAM_trajectory_trade/31_nominals-SEGMENT_3.AE9.output_mc_fluenceIntv_conf_level_75.txt
+# Ae9Ap9 Software Version:  1.50.001
+#
+# Model type:               AE9
+# Particle species:         e-
+# Flux type:                1PtDiff
+# Flux direction:           Omnidirectional
+# Energy levels (MeV):       0.04 0.07 0.1 0.25 0.5 0.75 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8.5 10
+#
+# Accumulation mode:        Interval, length = 280800 seconds (3.25 days)
+#
+# Aggregation Confidence Level:   75
+# Scenarios in Aggregation (100): 001-100
+#
+# Time format:              Modified Julian Date
+# Coordinate system:        GEI (Geocentric Equatorial Inertial) Cartesian in km
+# Data Delimiter:           space
+#
+# datetime(mjd),posx(km),posy(km),posz(km),fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence,fluence(#/cm^2/MeV)
+51547.75000000 0.000000 0.000000 0.000000 1.43337139e+013 1.01792023e+013 3.35379734e+012 9.15123615e+011 2.58830279e+011 1.08651465e+011 4.65976290e+010 1.66730914e+010 5.51888287e+009 1.58735437e+009 5.79202681e+008 2.40570582e+008 9.72383005e+007 3.73181366e+007 1.66185044e+007 7.97806562e+006 4.23219071e+006 2.68383236e+006 1.52906340e+006 7.42022244e+005 4.61102824e+005
+51551.00000000 0.000000 0.000000 0.000000 1.43337139e+013 1.01792023e+013 3.35379734e+012 9.15123615e+011 2.58830279e+011 1.08651465e+011 4.65976290e+010 1.66730914e+010 5.51888287e+009 1.58735437e+009 5.79202681e+008 2.40570582e+008 9.72383005e+007 3.73181366e+007 1.66185044e+007 7.97806562e+006 4.23219071e+006 2.68383236e+006 1.52906340e+006 7.42022244e+005 4.61102824e+005
+51553.60719400 0.000000 0.000000 0.000000 3.21515408e+013 2.09224442e+013 6.44688716e+012 1.62858109e+012 4.28661115e+011 1.81818624e+011 8.87205646e+010 3.15762253e+010 9.74782943e+009 2.91198217e+009 1.09527699e+009 4.48985107e+008 1.89038845e+008 8.07936201e+007 3.30786419e+007 1.54894379e+007 8.91549664e+006 5.62553920e+006 3.39463769e+006 1.88582670e+006 1.23420949e+006
