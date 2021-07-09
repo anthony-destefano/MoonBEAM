@@ -5,8 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# python analyze_IRENE_flux_dose_vs_trajectory.py traj_300km-20Re_IRENE_solmax.txt Equator3_DifferentialFlux_Electron_Proton.txt Equator3_DoseRate_Electron_Proton_Total.txt '20 Orbits during Solar Max at 95% confidence level'
-# python analyze_IRENE_flux_dose_vs_trajectory.py traj_300km-20Re_IRENE_solmin.txt Equator4_DifferentialFlux_Electron_Proton.txt Equator4_DoseRate_Electron_Proton_Total.txt '20 Orbits during Solar Min at 95% confidence level'
+# python analyze_IRENE_flux_dose_vs_trajectory.py traj_300km-20Re_IRENE_solmax.txt Equator3_DifferentialFlux_Electron_Proton.txt Equator3_DoseRate_Electron_Proton_Total.txt "20 Orbits during Solar Max at 95% confidence level"
+# python analyze_IRENE_flux_dose_vs_trajectory.py traj_300km-20Re_IRENE_solmin.txt Equator4_DifferentialFlux_Electron_Proton.txt Equator4_DoseRate_Electron_Proton_Total.txt "20 Orbits during Solar Min at 95% confidence level"
 
 def get_dose_at_time(t, fdose_time, fdose):
 	for i in range(np.shape(fdose_time)[0]):
@@ -93,7 +93,7 @@ plt.xlabel('Distance from Earth Center (Re)')
 plt.ylabel('Electron Dose Rate (rads/sec)')
 plt.title('Electron Dose Rate vs. Orbit Distance\n' + fig_subtitle)
 plt.legend()
-plt.savefig('RadBelt_Electron_Dose_Rate.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('RadBelt_Electron_Dose_Rate_' + traj_filename[:-4] + '.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
 
 plt.figure()
 for i in range(N_d):
@@ -104,7 +104,7 @@ plt.xlabel('Distance from Earth Center (Re)')
 plt.ylabel('Proton Dose Rate (rads/sec)')
 plt.title('Proton Dose Rate vs. Orbit Distance\n' + fig_subtitle)
 plt.legend()
-plt.savefig('RadBelt_Proton_Dose_Rate.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('RadBelt_Proton_Dose_Rate_' + traj_filename[:-4] + '.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
 
 plt.figure()
 for i in range(N_d):
@@ -115,7 +115,7 @@ plt.xlabel('Distance from Earth Center (Re)')
 plt.ylabel('Total Dose Rate (rads/sec)')
 plt.title('Total Dose Rate vs. Orbit Distance\n' + fig_subtitle)
 plt.legend()
-plt.savefig('RadBelt_Total_Dose_Rate.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('RadBelt_Total_Dose_Rate_' + traj_filename[:-4] + '.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
 
 plt.figure(figsize=(6.4, 8))
 curplot = plt.semilogy(traj_r/Re, flux_electron.T)
@@ -125,7 +125,7 @@ plt.ylabel(r'Electron Differential Flux (#/cm$^2$/MeV/sec)')
 plt.title('Electron Differential Flux vs. Orbit Distance\n' + fig_subtitle)
 elabel = vadd(E_e.astype(str), ' MeV')
 plt.legend(curplot, elabel)
-plt.savefig('RadBelt_Electron_Diff_Flux.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('RadBelt_Electron_Diff_Flux_' + traj_filename[:-4] + '.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
 
 plt.figure(figsize=(6.4, 8))
 curplot = plt.semilogy(traj_r/Re, flux_proton.T)
@@ -135,7 +135,7 @@ plt.ylabel(r'Proton Differential Flux (#/cm$^2$/MeV/sec)')
 plt.title('Proton Differential Flux vs. Orbit Distance\n' + fig_subtitle)
 plabel = vadd(E_p.astype(str), ' MeV')
 plt.legend(curplot, plabel)
-plt.savefig('RadBelt_Proton_Diff_Flux.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
+plt.savefig('RadBelt_Proton_Diff_Flux_' + traj_filename[:-4] + '.png', dpi=800, bbox_inches='tight', pad_inches=0.1)
 
 plt.show()
 
