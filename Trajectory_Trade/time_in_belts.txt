@@ -1,0 +1,44 @@
+reading...  ./Reduced_IRENE_data\21_nominals-SEGMENT_1_Plot_004.txt
+628.8252299999995  mins |  3.1966244735605054  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\21_nominals-SEGMENT_2_Plot_004.txt
+575.0032700000013  mins |  2.923021274542888  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\21_nominals-SEGMENT_3_Plot_004.txt
+544.141730000001  mins |  2.766137057197207  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\21_nominals-SEGMENT_4_Plot_004.txt
+505.47721000000246  mins |  2.569586497528243  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\21_nominals-SEGMENT_5_Plot_004.txt
+493.7863500000013  mins |  2.510156170292529  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\31_nominals-SEGMENT_1_Plot_004.txt
+652.4630900000009  mins |  4.975180944794945  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\31_nominals-SEGMENT_2_Plot_004.txt
+630.5748700000004  mins |  4.808278239142305  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\31_nominals-SEGMENT_3_Plot_004.txt
+618.5242400000008  mins |  4.716389417126683  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\31_nominals-SEGMENT_4_Plot_004.txt
+600.7058800000007  mins |  4.580520328900564  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\Phasing_Orbit1000km_Plot_004.txt
+2023.2788887999998  mins |  99.6534620371906  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\Phasing_Orbit2000km_Plot_004.txt
+2053.3327888  mins |  99.65851686926311  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\Phasing_Orbit3000km_Plot_004.txt
+2073.0862888  mins |  99.66175970150984  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\Phasing_Orbit4000km_Plot_004.txt
+2161.8282888  mins |  99.67559925953867  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\Phasing_Orbit500km_Plot_004.txt
+2019.2851888  mins |  99.65277904142533  percent of trajectory in belts
+
+reading...  ./Reduced_IRENE_data\Rp30408_22N_Plot_004.txt
+5508.399038399983  mins |  3.2039076922647305  percent of trajectory in belts
