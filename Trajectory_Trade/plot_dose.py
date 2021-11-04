@@ -8,7 +8,7 @@ import numpy.ma as ma
 import glob
 
 
-reduced_directory = './Reduced_IRENE_data/'
+reduced_directory = sys.argv[1]# './Reduced_IRENE_data/'
 
 for file in glob.glob(reduced_directory + '*Plot_001.txt'):
 	print('reading... ', file)
