@@ -1,0 +1,10 @@
+# plot data from Model: AE9/AP9
+# data delimiter: space
+# flux dir: omni
+# Y-axis data is: Dose (rads)
+# Thickness (mm) 'CL_95 Electron Dose at 14572 min' 'CL_95 Proton Dose at 14572 min' 'CL_95 Total Dose at 14572 min'
+0.5 1.39748815e+004 1.28325006e+003 1.44363254e+004
+1.5 2.22390302e+003 2.84132370e+002 2.44580578e+003
+1.8 1.58489974e+003 1.88542770e+002 1.72130855e+003
+2.7 5.77480960e+002 1.10689916e+002 6.46776215e+002
+3.7 1.93595106e+002 8.88000851e+001 2.47926708e+002
